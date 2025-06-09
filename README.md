@@ -1,4 +1,3 @@
-# creed_care
 # CreedCare App
 
 Welcome to the official repository for the **CreedCare App** – a personalized healthcare and nutrition platform that focuses on creating custom wellness plans based on individual needs.
