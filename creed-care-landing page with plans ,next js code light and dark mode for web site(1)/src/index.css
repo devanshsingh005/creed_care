@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary-50: 255, 248, 225;
+    --color-primary-100: 255, 236, 179;
+    --color-primary-200: 255, 224, 130;
+    --color-primary-300: 255, 213, 79;
+    --color-primary-400: 255, 202, 40;
+    --color-primary-500: 251, 183, 74;
+    --color-primary-600: 240, 167, 50;
+    --color-primary-700: 229, 164, 59;
+    --color-primary-800: 219, 154, 51;
+    --color-primary-900: 209, 143, 42;
+
+    --color-secondary-50: 255, 235, 238;
+    --color-secondary-100: 255, 205, 210;
+    --color-secondary-200: 239, 154, 154;
+    --color-secondary-300: 229, 115, 115;
+    --color-secondary-400: 239, 83, 80;
+    --color-secondary-500: 229, 57, 53;
+    --color-secondary-600: 211, 47, 47;
+    --color-secondary-700: 198, 40, 40;
+    --color-secondary-800: 183, 28, 28;
+    --color-secondary-900: 142, 22, 22;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+      "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .prose {
+    max-width: none;
+  }
+
+  .prose p {
+    margin-bottom: 1rem;
+  }
+
+  .prose blockquote {
+    font-style: italic;
+    border-left: 4px solid theme("colors.primary.500");
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+  }
+}
+
+/* Custom animations */
+@keyframes heartbeat {
+  0% {
+    stroke-dashoffset: 500;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -500;
+  }
+}
+
+.heartbeat-line {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: heartbeat 3s ease-in-out infinite;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow,
+    transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Focus styles for accessibility */
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid theme("colors.primary.500");
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: theme("colors.gray.100");
+}
+
+::-webkit-scrollbar-thumb {
+  background: theme("colors.primary.500");
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: theme("colors.primary.600");
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: theme("colors.gray.800");
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: theme("colors.primary.600");
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: theme("colors.primary.500");
+}
