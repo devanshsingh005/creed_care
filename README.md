@@ -19,7 +19,7 @@ Open your terminal and run:
 
 ```bash
 git clone https://github.com/devanshsingh005/creed_care.git
-cd creedcare-app
+cd creed_app
 ```
 ```bash
 npm install
