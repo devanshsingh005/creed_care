@@ -1,0 +1,173 @@
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    background: linear-gradient(to right, #d57e1e, #e67300);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .hero-left {
+    max-width: 600px;
+  }
+  
+  .hero-left h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .hero-left p {
+    margin-top: 1rem;
+    line-height: 1.6;
+  }
+  
+  .hero-buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .start-plan, .learn-more {
+    padding: 0.8rem 1.6rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .start-plan {
+    background-color: white;
+    color: #e67300;
+  }
+  
+  .learn-more {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+  
+  .stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+  
+  .tags-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+  
+  .tag {
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .tag.pink { background-color: #e15c7a; }
+  .tag.blue { background-color: #4e9ddc; }
+  .tag.green { background-color: #3bc574; }
+  .tag.purple { background-color: #8b60df; }
+  .tag.orange {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    grid-column: span 2;
+  }
+  .tag.large {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+  
+  .footer-text {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .hero-right {
+    position: relative;
+    max-width: 450px;
+  }
+  
+  .quote-card {
+    background-color: #1f1f1f;
+    padding: 2rem;
+    border-radius: 16px;
+    position: relative;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  .quote-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  
+  .underline {
+    text-decoration: underline;
+    color: #f66;
+  }
+  
+  .heartbeat-text {
+    color: #e53e3e;
+    font-weight: bold;
+  }
+  
+  .heartbeat-animation {
+    width: 100%;
+    height: 2px;
+    background: red;
+    margin: 1rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .heartbeat-animation::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      red 40%,
+      transparent 60%,
+      transparent 100%
+    );
+    animation: heartbeat-pulse 2s infinite;
+  }
+  
+  @keyframes heartbeat-pulse {
+    0% { left: -100%; }
+    50% { left: 0%; }
+    100% { left: 100%; }
+  }
+  
+  .quote-subtext {
+    background-color: #333;
+    padding: 0.8rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .sub-badge {
+    position: absolute;
+    right: 0;
+    bottom: -2rem;
+    background-color: #333;
+    color: #ff6;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+  }
+  
