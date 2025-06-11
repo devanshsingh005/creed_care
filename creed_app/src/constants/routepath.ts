@@ -1,4 +1,4 @@
-export const ROUTES ={
+export const ROUTES = {
     LOGIN: "/login",
     HOME: "/home",
 }
