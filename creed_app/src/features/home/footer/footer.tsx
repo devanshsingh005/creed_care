@@ -1,0 +1,112 @@
+import React from 'react';
+import { Heart, Phone, Mail, MapPin } from 'lucide-react';
+import './footer.css';
+
+const Footer: React.FC = () => {
+  return (
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-grid">
+          {/* Brand */}
+          <div className="footer-brand">
+            <div className="brand-logo">
+              <div className="logo-circle">
+                <div className="logo-text">
+                  C
+                  <div className="logo-line"></div>
+                </div>
+              </div>
+              <div>
+                <h3>Creed</h3>
+                <p>a personal health care</p>
+              </div>
+            </div>
+            <p className="brand-description">
+              Your health is our creed. Delivering personalized nutrition and wellness care through medical expertise and compassionate support.
+            </p>
+            <div className="brand-tagline">
+              <Heart className="heart-icon" />
+              <span>Caring is the best medicine</span>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div className="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#why-choose-us">Why Choose Us</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div className="footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Nutritional Management</a></li>
+              <li><a href="#">Medical Consultation</a></li>
+              <li><a href="#">Wellness Workshops</a></li>
+              <li><a href="#">Community Support</a></li>
+              <li><a href="#">Digital Tools</a></li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div className="footer-contact">
+            <h4>Get In Touch</h4>
+            <div className="contact-info">
+              <div className="contact-item">
+                <Phone className="contact-icon" />
+                <span>+1 (555) 123-4567</span>
+              </div>
+              <div className="contact-item">
+                <Mail className="contact-icon" />
+                <span>hello@creed.care</span>
+              </div>
+              <div className="contact-item">
+                <MapPin className="contact-icon" />
+                <span>
+                  123 Wellness Street<br />
+                  Health City, HC 12345
+                </span>
+              </div>
+            </div>
+
+            {/* Social Media */}
+            <div className="social-media">
+              <h5>Follow Us</h5>
+              <div className="social-icons">
+                <a href="#" className="social-icon">
+                  <span>IG</span>
+                </a>
+                <a href="#" className="social-icon">
+                  <span>LI</span>
+                </a>
+                <a href="#" className="social-icon">
+                  <span>WA</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="footer-bottom">
+          <p>
+            © 2024 Creed Personal Lifestyle Healthcare. All rights reserved.
+          </p>
+          <div className="footer-links-bottom">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer; 
