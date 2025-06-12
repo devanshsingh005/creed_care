@@ -10,62 +10,62 @@ const whyChooseUsItems = [
     icon: UserCheck,
     title: "Medical Supervision",
     desc: "All nutrition plans supervised by qualified doctors and certified nutritionists",
-    color: "orange-amber"
+    color: "yellow-4"
   },
   {
     icon: Heart,
     title: "Comprehensive Care",
     desc: "From children to elders, athletes to individuals with health conditions - we cover everyone",
-    color: "amber-yellow"
+    color: "yellow-4"
   },
-  {
-    icon: Award,
-    title: "Evidence-Based Planning",
-    desc: "Diet plans based on scientific research with measurable results",
-    color: "green-emerald"
-  },
+  // {
+  //   icon: Award,
+  //   title: "Evidence-Based Planning",
+  //   desc: "Diet plans based on scientific research with measurable results",
+  //   color: "green-emerald"
+  // },
   {
     icon: TrendingUp,
     title: "Trusted by Families",
     desc: "Thousands of families trust us for their nutritional health management",
-    color: "blue-cyan"
+    color: "yellow-4"
   },
   {
     icon: Clock,
     title: "24/7 Support & Teleconsultation",
     desc: "Round-the-clock support with virtual consultations",
-    color: "purple-pink"
+    color: "yellow-4"
   },
   {
     icon: Calendar,
     title: "Kickoff Workshop",
     desc: "Comprehensive onboarding workshop to start your journey right",
-    color: "pink-rose"
+    color: "yellow-4"
   },
-  {
-    icon: BookOpen,
-    title: "Monthly Wellness Modules",
-    desc: "Continuous learning through monthly educational modules",
-    color: "indigo-purple"
-  },
+  // {
+  //   icon: BookOpen,
+  //   title: "Monthly Wellness Modules",
+  //   desc: "Continuous learning through monthly educational modules",
+  //   color: "indigo-purple"
+  // },
   {
     icon: Heart,
     title: "Personalized Health-Care",
     desc: "Wide range of specializations from children to athletes",
-    color: "red-pink"
+    color: "yellow-4"
   },
-  {
-    icon: Users,
-    title: "Peer Support Circles",
-    desc: "Connect with others on similar health journeys",
-    color: "cyan-blue"
-  },
-  {
-    icon: Smartphone,
-    title: "Access to Digital Tools",
-    desc: "Modern technology including WhatsApp support and virtual consultations",
-    color: "yellow-orange"
-  }
+  // {
+  //   icon: Users,
+  //   title: "Peer Support Circles",
+  //   desc: "Connect with others on similar health journeys",
+  //   color: "cyan-blue"
+  // },
+  // {
+  //   icon: Smartphone,
+  //   title: "Access to Digital Tools",
+  //   desc: "Modern technology including WhatsApp support and virtual consultations",
+  //   color: "yellow-orange"
+  // }
 ];
 
 const WhyChooseUs: React.FC = () => {

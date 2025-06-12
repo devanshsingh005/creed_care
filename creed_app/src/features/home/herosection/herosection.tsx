@@ -1,96 +1,108 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { Zap, Activity, Heart } from 'lucide-react';
+import HeroImage from '/src/assets/images/hero_image.jpg'; // Import the image
 import './herosection.css';
+
+const HeartbeatAnimation = () => {
+  return (
+    <div className="heartbeat-container">
+      <div className="heartbeat-wrapper">
+        <svg width="240" height="120" viewBox="0 0 240 120" className="heartbeat-svg">
+          <defs>
+            <linearGradient id="heartbeatGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#E53935" />
+              <stop offset="50%" stopColor="#FF5722" />
+              <stop offset="100%" stopColor="#E53935" />
+            </linearGradient>
+            <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="4" result="blur" />
+              <feComposite in="SourceGraphic" in2="blur" operator="over" />
+            </filter>
+          </defs>
+          <path
+            d="M20,60 L60,60 L80,30 L100,90 L120,20 L140,100 L160,60 L220,60"
+            stroke="url(#heartbeatGradient)"
+            strokeWidth="4"
+            fill="none"
+            className="heartbeat-line"
+            filter="url(#glow)"
+          />
+        </svg>
+        <div className="heartbeat-label">
+          <div  className="heartbeat-text" >
+            Your unique rhythm
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const HeroSection = () => {
   return (
     <section className="hero-section">
-      {/* Decorative elements */}
-      <div className="hero-decoration hero-decoration-1"></div>
-      <div className="hero-decoration hero-decoration-2"></div>
-      <div className="hero-decoration hero-decoration-3"></div>
-      
+      {/* Animated Geometric Shapes */}
+      <div className="hero-shapes">
+        <div className="shape shape-1"></div>
+        <div className="shape shape-2"></div>
+        <div className="shape shape-3"></div>
+        <div className="shape shape-4"></div>
+        <div className="shape shape-5"></div>
+        <div className="shape shape-6"></div>
+
+        {/* Futuristic Grid Lines */}
+        <div className="grid-lines">
+          {Array.from({ length: 144 }).map((_, i) => (
+            <div key={i} className="grid-cell"></div>
+          ))}
+        </div>
+      </div>
+
       <div className="hero-container">
         <div className="hero-content">
-          <div className="hero-text">
-            <h1>
-              Your Path to <span>Better</span> Health
-            </h1>
-            <p>
-              Personalized health care plans, expert guidance, and tools to help you achieve your wellness goals.
-            </p>
-            <div className="hero-buttons">
-              <Link to="/health-plans" className="hero-button">
-                Get Your Plan
-              </Link>
-              <Link to="/about" className="hero-button">
-                Learn More <ArrowRight size={16} className="button-icon" />
-              </Link>
-            </div>
-            
-            <div className="hero-stats">
-              <div className="stat-item">
-                <span className="stat-number">10k+</span>
-                <span className="stat-label">Happy Users</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">500+</span>
-                <span className="stat-label">Plans</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">50+</span>
-                <span className="stat-label">Experts</span>
-              </div>
-            </div>
+          <div className="hero-badge">
+            <Zap className="badge-icon" />
+            Next-Generation Healthcare
           </div>
+
+          <h1 className="hero-title">
+            Your health is our{" "}
+            <span className="gradient-text">creed</span>
+          </h1>
           
-          <div className="hero-image-container">
-            <img 
-              src="https://images.pexels.com/photos/1640770/pexels-photo-1640770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-              alt="Healthy lifestyle" 
-              className="hero-image"
+       
+
+          <p className="hero-description">
+            Delivering healthcare through customized nutrition plans backed by medical recommendations. Because caring
+            is the best medicine.
+          </p>
+
+          <div className="hero-buttons">
+            <Link to="/health-plans" className="primary-button">
+              Start Your Journey
+              <Zap className="button-icon" />
+            </Link>
+            <Link to="/demo" className="secondary-button">
+              Watch Demo
+            </Link>
+          </div>
+
+          {/* Heartbeat Animation */}
+          <HeartbeatAnimation />
+        </div>
+
+        {/* Hero Image Display */}
+        <div className="hero-image-display">
+          <div className="image-wrapper">
+            <img
+              src={HeroImage}
+              alt="Person meditating"
+              className="main-hero-image"
             />
-            
-            {/* Floating card 1 */}
-            <div className="floating-card floating-card-1">
-              <div className="card-content">
-                <div className="card-icon card-icon-orange">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 6L9 17L4 12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div>
-                <div>
-                  <h3>Personalized for You</h3>
-                  <p>Plans adjusted to your unique needs</p>
-                </div>
-              </div>
-            </div>
-            
-            {/* Floating card 2 */}
-            <div className="floating-card floating-card-2">
-              <div className="card-content">
-                <div className="card-icon card-icon-red">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" strokeWidth="2"/>
-                    <path d="M12 6V12L16 14" stroke="white" strokeWidth="2" strokeLinecap="round"/>
-                  </svg>
-                </div>
-                <div>
-                  <h3>Save Time</h3>
-                  <p>Ready-to-use health plans</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
       
-      {/* Wave decoration */}
-      <div className="hero-wave">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" fill="white">
-          <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,100L1360,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z"></path>
-        </svg>
-      </div>
     </section>
   );
 };

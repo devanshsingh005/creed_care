@@ -29,38 +29,10 @@
     gap: 0.5rem;
 }
 
-.logo-circle {
-    width: 40px;
-    height: 40px;
-    background-color: #FBB74A;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo-text {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #1A1A1A;
-    position: relative;
-}
-
-.logo-line {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo-line::after {
-    content: '';
-    width: 24px;
-    height: 2px;
-    background-color: #E53935;
-    border-radius: 9999px;
-    transform: rotate(12deg);
+.creed-logo-image {
+    height: 60px; /* Adjust height as needed, width will auto-adjust to maintain aspect ratio */
+    width: auto;
+    padding-right: 0.5rem; /* Add some space between logo and text */
 }
 
 .brand-logo h3 {

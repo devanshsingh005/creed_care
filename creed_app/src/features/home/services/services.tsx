@@ -5,7 +5,7 @@ import './services.css';
 const services = [
   {
     icon: Heart,
-    title: "Personalized Nutrition Plans",
+    title: "Personalized Nutrition ",
     description: "Comprehensive health and nutrition services designed to support your wellness journey with personalized care and expert guidance.",
     features: [
       "Online Consultations",

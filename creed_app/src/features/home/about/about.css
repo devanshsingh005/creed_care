@@ -106,7 +106,53 @@
   line-height: 1.5;
 }
 
-/* Story Section */
+/* Our Story Card (Visually Distinct) */
+.our-story-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  max-width: 700px;
+  margin: 2.5rem auto 0 auto;
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+.our-story-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1.2rem;
+}
+
+.our-story-main {
+  color: #222;
+  font-size: 1.07rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.our-story-quote {
+  background: #fff9f6;
+  border-left: 4px solid #ff5a36;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #444;
+  text-align: left;
+  margin: 0 auto 1.5rem auto;
+  padding: 1rem 1.2rem;
+  max-width: 600px;
+}
+
+.our-story-cta {
+  color: #e53935;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* Legacy Story Section (if needed elsewhere) */
 .story-section {
   background: linear-gradient(to right, rgba(251, 183, 74, 0.05), rgba(229, 57, 53, 0.05));
   border-radius: 1rem;
@@ -150,11 +196,15 @@
     grid-template-columns: 1fr;
   }
 
-  .story-section {
+  .story-section,
+  .our-story-card {
     padding: 1.5rem;
   }
 
-  .story-section p {
-    font-size: 1rem;
+  .story-section p,
+  .our-story-main,
+  .our-story-cta,
+  .our-story-quote {
+    font-size: 0.98rem;
   }
 } 

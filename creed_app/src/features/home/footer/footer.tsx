@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, Phone, Mail, MapPin } from 'lucide-react';
+import CreedLogo from '/src/assets/images/creed_logo.png';
 import './footer.css';
 
 const Footer: React.FC = () => {
@@ -10,15 +11,10 @@ const Footer: React.FC = () => {
           {/* Brand */}
           <div className="footer-brand">
             <div className="brand-logo">
-              <div className="logo-circle">
-                <div className="logo-text">
-                  C
-                  <div className="logo-line"></div>
-                </div>
-              </div>
+              <div style={{ backgroundColor: 'white' }}> <img src={CreedLogo} alt="Creed Logo" className="creed-logo-image" /></div>
               <div>
                 <h3>Creed</h3>
-                <p>a personal health care</p>
+                <p>a personal lifestyle health care</p>
               </div>
             </div>
             <p className="brand-description">
