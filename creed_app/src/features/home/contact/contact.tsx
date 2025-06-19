@@ -47,7 +47,7 @@ const Contact: React.FC = () => {
         <div className="contact-content">
           <div className="contact-info">
             <h3>Get in Touch</h3>
-            <p>We're here to support your health journey 24/7. Reach out to us through any of the channels below.</p>
+            <p>We're here to support your health journey . Reach out to us through any of the channels below.</p>
 
             <div className="contact-methods">
               <div className="contact-method">
@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
                 <div>
                   <h4>Phone</h4>
                   <p className="method-info">+91 9342093042</p>
-                  <p className="method-note">24/7 Support Available</p>
+                  {/* <p className="method-note">24/7 Support Available</p> */}
                 </div>
               </div>
 
@@ -64,7 +64,7 @@ const Contact: React.FC = () => {
                 <div>
                   <h4>Email</h4>
                   <p className="method-info">hello@creed.care</p>
-                  <p className="method-note">Response within 2 hours</p>
+                  {/* <p className="method-note">Response within 2 hours</p> */}
                 </div>
               </div>
 
@@ -84,7 +84,7 @@ const Contact: React.FC = () => {
                 <div className="contact-icon hours-icon"><Clock className="icon" /></div>
                 <div>
                   <h4>Hours</h4>
-                  <p className="method-info">24/7 Teleconsultation<br />Office: Mon-Fri 9AM-6PM</p>
+                  <p className="method-info">Office: Mon-Fri 9AM-6PM</p>
                 </div>
               </div>
             </div>

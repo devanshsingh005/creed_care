@@ -147,14 +147,6 @@ const ServicesSection: React.FC = () => {
                     </div>
                   ))}
                 </div>
-                
-                <button 
-                  className="learn-more-btn"
-                  disabled={service.comingSoon}
-                  style={service.comingSoon ? { backgroundColor: '#ccc', cursor: 'not-allowed' } : {}}
-                >
-                  {service.comingSoon ? 'Coming Soon' : 'Learn More'}
-                </button>
               </div>
             </div>
           ))}

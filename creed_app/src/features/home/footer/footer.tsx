@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <p className="brand-description">
-              Your health is our creed. Delivering personalized nutrition and wellness care through medical expertise and compassionate support.
+              Care is our creed. Delivering personalized nutrition and wellness care through medical expertise and compassionate support.
             </p>
             <div className="brand-tagline">
               <Heart className="heart-icon" />
