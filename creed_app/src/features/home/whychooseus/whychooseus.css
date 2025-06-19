@@ -1,0 +1,127 @@
+.why-choose-us {
+    padding: 4rem;
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.why-choose-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.why-choose-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.why-choose-header h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.why-choose-header p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.why-choose-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.why-choose-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.icon-container {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.why-choose-card:hover .icon-container {
+    transform: scale(1.1);
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+/* Yellow gradient color classes */
+.icon-container.yellow-4 {
+    background: linear-gradient(135deg, #fbbf24, #fbbf24);
+}
+
+.why-choose-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.why-choose-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Decorative elements */
+.why-choose-us::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(251, 191, 36, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    top: -150px;
+    right: -150px;
+}
+
+.why-choose-us::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(251, 191, 36, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    bottom: -100px;
+    left: -100px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .why-choose-us {
+        padding: 2rem;
+    }
+
+    .why-choose-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .why-choose-grid {
+        grid-template-columns: 1fr;
+    }
+} 

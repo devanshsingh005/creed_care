@@ -1,0 +1,320 @@
+.contact-section {
+    padding: 4rem;
+    background: linear-gradient(135deg, #fff5e6, #fff);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.contact-header h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.contact-header p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.contact-info > div > p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.contact-method {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-icon .icon {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+.phone-icon { background: linear-gradient(135deg, #fbbf24); }
+.email-icon { background: linear-gradient(135deg,  #fbbf24); }
+.location-icon { background: linear-gradient(135deg,  #fbbf24); }
+.hours-icon { background: linear-gradient(135deg,  #fbbf24); }
+
+.contact-method h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.method-info {
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 0.25rem;
+}
+
+.method-note {
+    color: #e67300;
+    font-size: 0.9rem;
+}
+
+/* Contact Form Styles */
+.contact-form-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-section h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #e67300;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 1rem;
+    background: rgb(251, 183, 74);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(230, 115, 0, 0.2);
+}
+
+.button-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Decorative elements */
+.contact-section::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(230, 115, 0, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    top: -150px;
+    right: -150px;
+}
+
+.contact-section::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(230, 115, 0, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    bottom: -100px;
+    left: -100px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 2rem;
+    }
+
+    .contact-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact-methods {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+} 
+/* Join Us Banner Styles */
+.joinus-banner {
+  background: linear-gradient(90deg, rgb(251, 183, 74) 0%, #fbb040 100%);
+  border-radius: 24px;
+  padding: 48px 0;
+  text-align: center;
+  margin: 56px auto 0 auto;
+  max-width: 1204px;
+  box-shadow: 0 4px 16px rgba(251, 176, 64, 0.08);
+}
+
+.joinus-title {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.joinus-description {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.joinus-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.joinus-btn {
+  border-radius: 8px;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  border: none;
+}
+
+.joinus-btn-primary {
+  background: #fff;
+  color: #fbb040;
+}
+
+.joinus-btn-primary:hover {
+  background: #ffe0b2;
+}
+
+.joinus-btn-secondary {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.joinus-btn-secondary:hover {
+  background: #fff;
+  color: #fbb040;
+}
+
+
+@media (max-width: 1024px) {
+  .joinus-banner {
+    padding: 32px 0;
+    max-width: 98vw;
+  }
+  .joinus-title {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 600px) {
+  .joinus-banner {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

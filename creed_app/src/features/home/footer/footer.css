@@ -1,0 +1,236 @@
+.footer {
+    background-color: #1A1A1A;
+    color: white;
+    padding: 4rem 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+/* Brand Section */
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.creed-logo-image {
+    height: 60px; /* Adjust height as needed, width will auto-adjust to maintain aspect ratio */
+    width: auto;
+    padding-right: 0.5rem; /* Add some space between logo and text */
+}
+
+.brand-logo h3 {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.brand-logo p {
+    font-size: 0.75rem;
+    color: #9CA3AF;
+}
+
+.brand-description {
+    color: #D1D5DB;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.brand-tagline {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #D1D5DB;
+    font-size: 0.875rem;
+}
+
+.heart-icon {
+    width: 1rem;
+    height: 1rem;
+    color: #E53935;
+}
+
+/* Links Sections */
+.footer-links h4,
+.footer-contact h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-links a {
+    color: #D1D5DB;
+    font-size: 0.875rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #FBB74A;
+}
+
+/* Contact Section */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: linear-gradient(145deg, #2A2A2A, #1A1A1A);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(145deg, #1A1A1A, #2A2A2A);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #FBB74A;
+    margin-top: 0.125rem;
+    flex-shrink: 0;
+}
+
+.contact-item span {
+    color: #D1D5DB;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+/* Social Media */
+.social-media {
+    margin-top: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.social-media h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #FBB74A;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(145deg, #2A2A2A, #1A1A1A);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon:hover {
+    background: linear-gradient(145deg, #FBB74A, #E53935);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(251, 183, 74, 0.2);
+}
+
+.social-icon span {
+    font-size: 0.875rem;
+    color: white;
+    font-weight: 500;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #374151;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-bottom p {
+    color: #9CA3AF;
+    font-size: 0.875rem;
+}
+
+.footer-links-bottom {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links-bottom a {
+    color: #9CA3AF;
+    font-size: 0.875rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links-bottom a:hover {
+    color: #FBB74A;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 2rem 0;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+
+    .footer-links-bottom {
+        justify-content: center;
+    }
+} 
