@@ -17,7 +17,7 @@ Click the **"Fork"** button at the top-right of this page to create a copy of th
 Open your terminal and run:
 
 ```bash
-git clone https://github.com/devanshsingh005/creed_care.git
+git clone https://github.com/your-github-id/creed_care.git
 cd creed_app
 ```
 ```bash
