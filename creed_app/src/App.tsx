@@ -13,7 +13,9 @@ function App() {
         <Route path={ROUTES.PRIVACY_POLICY} element={<PrivacyPolicy />} />
         <Route path={ROUTES.TERMS_AND_CONDITIONS} element={<TermsAndConditions />} />
         <Route path={ROUTES.COOKIE_POLICY} element={<CookiePolicy />} />
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path={"*"} element={<Navigate to="/" />} />
+        {/* Add other routes here as needed */}
+
       </Routes>
     </Router>
   )
