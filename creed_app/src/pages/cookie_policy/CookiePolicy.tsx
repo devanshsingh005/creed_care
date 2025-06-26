@@ -1,13 +1,9 @@
 import React from "react";
-import './CP.css';
+import './CookiePolicy.css';
 
 const CookiePolicy: React.FC = () => (
   <div className="cookie-policy-container">
     <h1>Cookie Policy – CreedCare</h1>
-    <p>
-      <strong>Effective Date:</strong> [Insert Date]<br />
-      <strong>Last Updated:</strong> [Insert Date]
-    </p>
     <p>
       At CreedCare, your privacy and trust are important to us. This Cookie Policy explains how and why cookies and similar technologies are used when you visit or use our services through our mobile app or website.
     </p>

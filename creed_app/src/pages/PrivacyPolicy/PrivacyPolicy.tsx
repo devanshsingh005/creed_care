@@ -6,10 +6,6 @@ const PrivacyPolicy: React.FC = () => (
 <div className="privacy-policy-container">
     <h1>Privacy Policy – CreedCare</h1>
     <p>
-      <strong>Effective Date:</strong> [Insert Date]<br />
-      <strong>Last Updated:</strong> [Insert Date]
-    </p>
-    <p>
       At CreedCare, your privacy is our priority. This Privacy Policy explains how we collect, use, and protect your personal data when you use our website, services, and platform.
     </p>
 
@@ -48,7 +44,7 @@ const PrivacyPolicy: React.FC = () => (
       <li>Request data portability</li>
     </ul>
     <p>
-      Email us at <a href="mailto:[your email]">[your email]</a> for data requests.
+      Email us at <a href="mailto:[your email]">connectoncreed@gmail.com</a> for data requests.
     </p>
 
     <h2>5. Data Security</h2>

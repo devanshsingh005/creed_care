@@ -4,9 +4,7 @@ import './TermsAndConditions.css';
 const TermsAndConditions: React.FC = () => (
   <div className="terms-container">
     <h1>Terms &amp; Conditions – CreedCare</h1>
-    <p>
-      <strong>Effective Date:</strong> [Insert Date]
-    </p>
+  
     <p>
       Welcome to CreedCare! By using our website and services, you agree to these Terms &amp; Conditions.
     </p>
