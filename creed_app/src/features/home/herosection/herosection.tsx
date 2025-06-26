@@ -38,7 +38,7 @@ const HeartbeatQuote = () => {
   return (
     <div className="heartbeat-label">
       <div className="heartbeat-text">
-        <blockquote className="text-2xl md:text-3xl lg:text-4xl font-serif text-white leading-relaxed">
+        <blockquote className="text-2xl md:text-3xl lg:text-4xl font-serif text-white leading-relaxed " style={{ color: 'black' }}>
           "You deserve a care plan as<br />
           <span className="text-red-400 relative">
             unique
