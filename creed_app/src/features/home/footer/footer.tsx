@@ -2,6 +2,8 @@ import React from 'react';
 import { Heart, Phone, Mail, MapPin } from 'lucide-react';
 import CreedLogo from '/src/assets/images/creed_logo.png';
 import './footer.css';
+import { Link } from 'react-router-dom';
+import { ROUTES } from '../../../constants/routepath';
 
 const Footer: React.FC = () => {
   return (
@@ -11,7 +13,9 @@ const Footer: React.FC = () => {
           {/* Brand */}
           <div className="footer-brand">
             <div className="brand-logo">
-              <div style={{ backgroundColor: 'white' }}> <img src={CreedLogo} alt="Creed Logo" className="creed-logo-image" /></div>
+              <div style={{ backgroundColor: 'white' }}>
+                <img src={CreedLogo} alt="Creed Logo" className="creed-logo-image" />
+              </div>
               <div>
                 <h3>Creed</h3>
                 <p>a personal lifestyle health care</p>
@@ -45,7 +49,6 @@ const Footer: React.FC = () => {
               <li><a href="#">Personalized Nutrition</a></li>
               <li><a href="#">Elder Care</a></li>
               <li><a href="#">Health Monitoring</a></li>
-
             </ul>
           </div>
 
@@ -70,36 +73,35 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Social Media */}
-<div className="social-media">
-  <h5>Follow Us</h5>
-  <div className="social-icons">
-    <a
-      href="https://www.instagram.com/creedcare/"
-      className="social-icon"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <span>IG</span>
-    </a>
-    <a
-      href="https://www.facebook.com/profile.php?id=61576851643272"
-      className="social-icon"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <span>FB</span>
-    </a>
-    <a
-      href="https://x.com/CreedCare"
-      className="social-icon"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <span>TW</span>
-    </a>
-  </div>
-</div>
-
+            <div className="social-media">
+              <h5>Follow Us</h5>
+              <div className="social-icons">
+                <a
+                  href="https://www.instagram.com/creedcare/"
+                  className="social-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>IG</span>
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61576851643272"
+                  className="social-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>FB</span>
+                </a>
+                <a
+                  href="https://x.com/CreedCare"
+                  className="social-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>TW</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -109,9 +111,9 @@ const Footer: React.FC = () => {
             © 2024 Creed Personal Lifestyle Healthcare. All rights reserved.
           </p>
           <div className="footer-links-bottom">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookie Policy</a>
+            <Link to={ROUTES.PRIVACY_POLICY}>Privacy Policy</Link>
+            <Link to={ROUTES.TERMS_AND_CONDITIONS}>Terms & Conditions</Link>
+            <Link to={ROUTES.COOKIE_POLICY}>Cookie Policy</Link>
           </div>
         </div>
       </div>
@@ -119,4 +121,4 @@ const Footer: React.FC = () => {
   );
 };
 
-export default Footer; 
+export default Footer;
