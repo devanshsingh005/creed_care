@@ -16,13 +16,13 @@ export default {
         accent: '#e67300',
         accentHover: '#d57e1e',
         primary: {
-          DEFAULT: '#fbbf24',
+          DEFAULT: '#FBB74A',
           50: '#fffbeb',
           100: '#fef3c7',
           200: '#fde68a',
           300: '#fcd34d',
           400: '#fbbf24',
-          500: '#f59e0b',
+          500: '#FBB74A',
           600: '#d97706',
           700: '#b45309',
           800: '#92400e',
@@ -259,6 +259,6 @@ export default {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography'), require('@tailwindcss/aspect-ratio'), require('@tailwindcss/line-clamp')],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography'), require('@tailwindcss/aspect-ratio')],
 }
 
