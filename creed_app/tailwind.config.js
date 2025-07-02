@@ -28,7 +28,7 @@ export default {
           800: '#92400e',
           900: '#78350f',
         },
-        success: {
+        green: {
           DEFAULT: '#10b981',
           100: '#d1fae5',
           200: '#a7f3d0',
@@ -40,7 +40,7 @@ export default {
           800: '#065f46',
           900: '#064e3b',
         },
-        danger: {
+        red: {
           DEFAULT: '#ef4444',
           100: '#fee2e2',
           200: '#fecaca',
@@ -64,7 +64,7 @@ export default {
           800: '#92400e',
           900: '#78350f',
         },
-        info: {
+        blue: {
           DEFAULT: '#3b82f6',
           100: '#dbeafe',
           200: '#bfdbfe',
@@ -89,8 +89,6 @@ export default {
           900: '#111827',
         },
         background: '#ffffff',
-        foreground: '#030200',
-        light: '#ffffff',
         gold: '#d4a017',
       },
       spacing: {
