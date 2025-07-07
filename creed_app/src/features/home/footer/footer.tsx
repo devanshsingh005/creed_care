@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="footer-contact">
+          <div className="footer-contact ">
             <h4>Get In Touch</h4>
             <div className="contact-info">
               <div className="contact-item">

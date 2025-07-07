@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        segoe: ['Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
+        // add google font 
         poppins: ['Poppins', 'sans-serif'],
       },
       colors: {
@@ -257,6 +257,6 @@ export default {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography'), require('@tailwindcss/aspect-ratio')],
+  plugins: [],
 }
 

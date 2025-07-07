@@ -103,7 +103,7 @@ const ServicesSection: React.FC = () => {
       <div className="services-container">
         <div className="services-header">
           <h2>Our <span className="highlight">Services</span></h2>
-          <p>
+          <p className='text-red-500'>
             Comprehensive health and nutrition services designed to support your wellness journey with personalized care, expert guidance, and ongoing support.
           </p>
         </div>
@@ -115,7 +115,7 @@ const ServicesSection: React.FC = () => {
                 <div className={`service-icon ${service.color}`}>
                   <service.icon size={32} />
                 </div>
-                <h3>{service.title}</h3>
+                <h3 >{service.title}</h3>
               </div>
               <div className="service-content">
                 {/* Coming Soon Badge */}
