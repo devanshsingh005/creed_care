@@ -111,9 +111,9 @@ const Footer: React.FC = () => {
             © 2024 Creed Personal Lifestyle Healthcare. All rights reserved.
           </p>
           <div className="footer-links-bottom">
-            <Link to={ROUTES.PRIVACY_POLICY}>Privacy Policy</Link>
-            <Link to={ROUTES.TERMS_AND_CONDITIONS}>Terms & Conditions</Link>
-            <Link to={ROUTES.COOKIE_POLICY}>Cookie Policy</Link>
+            <Link to={ROUTES.LEGAL}>Privacy Policy</Link>
+            <Link to={ROUTES.LEGAL}>Terms & Conditions</Link>
+            <Link to={ROUTES.LEGAL}>Cookie Policy</Link>
           </div>
         </div>
       </div>
