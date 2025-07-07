@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { ROUTES } from './constants/routepath'
 import Home from './features/home/Home'
-import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
-import CookiePolicy from './pages/cookie_policy/CookiePolicy'
-import TermsAndConditions from './pages/TermsAndConditions/TermsAndConditions'
+import PrivacyPolicy from './pages/legal/PrivacyPolicy/PrivacyPolicy'
+import CookiePolicy from './pages/legal/cookie_policy/CookiePolicy'
+import TermsAndConditions from './pages/legal/TermsAndConditions/TermsAndConditions'
 
 function App() {
   return (
