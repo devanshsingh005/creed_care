@@ -1,4 +1,4 @@
-import Legal from "../features/legal/legal";
+import Legal from "../features/legal/Legal";
 
 export const LegalPage = () => {
   return <Legal />;

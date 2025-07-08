@@ -14,7 +14,9 @@ const Footer: React.FC = () => {
           <div className="footer-brand">
             <div className="brand-logo">
               <div style={{ backgroundColor: 'white' }}>
-                <img src={CreedLogo} alt="Creed Logo" className="creed-logo-image" />
+                <Link to={ROUTES.HOME}>
+                  <img src={CreedLogo} alt="Creed Logo" className="creed-logo-image" />
+                </Link>
               </div>
               <div>
                 <h3>Creed</h3>

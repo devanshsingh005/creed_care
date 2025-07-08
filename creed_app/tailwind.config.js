@@ -140,11 +140,7 @@ export default {
         '7xl': ['4.5rem', { lineHeight: '1' }],
         '8xl': ['6rem', { lineHeight: '1' }],
         '9xl': ['8rem', { lineHeight: '1' }],
-        '2.8xl': '2.8rem',
-        '2.2xl': '2.2rem',
-        '1.8xl': '1.8rem',
-        '1.5xl': '1.5rem',
-        '1.1xl': '1.1rem',
+       
       },
       fontWeight: {
         normal: '400',
